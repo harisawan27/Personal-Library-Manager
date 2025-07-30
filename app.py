@@ -8,21 +8,21 @@ st.markdown("""
     /* App background gradient */
     .stApp {
         background: linear-gradient(to right, #04364A, #176B87);
-        color: white !important;
+        color: white;
     }
 
     /* Sidebar styling */
     section[data-testid="stSidebar"] {
         background: linear-gradient(to bottom, #176B87, #64CCC5);
+        color: white;
+    }
+
+    /* Headings and text */
+    h1, h2, h3, h4, h5, h6, p, span, label, div {
         color: white !important;
     }
 
-    /* Text color */
-    h1, h2, h3, h4, h5, h6, p, span, label, .stMarkdown {
-        color: white !important;
-    }
-
-    /* Input fields */
+    /* Input text fields */
     input, textarea, select {
         color: black !important;
     }
