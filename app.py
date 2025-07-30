@@ -5,24 +5,29 @@ st.set_page_config(page_title="My Library Manager", page_icon="📚")
 
 st.markdown("""
   <style>
+    /* App background gradient */
     .stApp {
         background: linear-gradient(to right, #04364A, #176B87);
         color: white !important;
     }
 
+    /* Sidebar styling */
     section[data-testid="stSidebar"] {
         background: linear-gradient(to bottom, #176B87, #64CCC5);
         color: white !important;
     }
 
-    h1, h2, h3, h4, h5, h6, p, span, label {
+    /* Text color */
+    h1, h2, h3, h4, h5, h6, p, span, label, .stMarkdown {
         color: white !important;
     }
 
-    input, textarea, .stSelectbox, .stRadio label {
+    /* Input fields */
+    input, textarea, select {
         color: black !important;
     }
 
+    /* Buttons */
     .stButton > button {
         background-color: #04364A;
         color: white !important;
