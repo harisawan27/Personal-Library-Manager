@@ -5,40 +5,28 @@ st.set_page_config(page_title="My Library Manager", page_icon="📚")
 
 st.markdown("""
   <style>
-    .main-container {
-        max-width: 80%;
-        margin: auto;
-        transition: max-width 0.2s ease-in-out;
-    }
-    .stApp, .css-1v0mbdj, .css-ffhzg2, .css-1d391kg, .css-qrbaxs, .css-10trblm {
+    /* General text color */
+    .stApp {
+        background: linear-gradient(to right, #04364A, #176B87);
         color: white !important;
     }
+
     h1, h2, h3, h4, h5, h6, p, span, label {
         color: white !important;
     }
+
+    section[data-testid="stSidebar"] {
+        background: linear-gradient(to bottom, #176B87, #64CCC5);
+        color: white !important;
+    }
+
     .stTextInput>div>div>input,
     .stNumberInput>div>input,
     .stSelectbox>div>div>div,
     .stRadio>div>label {
         color: black !important;
     }
-    section[data-testid="stSidebar"] {
-        color: white !important;
-    }
-    .sidebar-hidden .main-container {
-        max-width: 100%;
-    }
-    .css-1d391kg {
-        padding: 2rem !important;
-    }
-    /* Background Gradient */
-    .stApp {
-        background: linear-gradient(to right, #04364A, #176B87);
-    }
-    section[data-testid="stSidebar"] {
-        background: linear-gradient(to bottom, #176B87, #64CCC5);
-        color: white !important;
-    }
+
     .stButton > button {
         background-color: #04364A;
         color: white !important;
@@ -49,11 +37,13 @@ st.markdown("""
         transition: all 0.3s ease;
         cursor: pointer;
     }
+
     .stButton > button:hover {
         background-color: #176B87;
         color: #64CCC5 !important;
         border-color: #04364A;
     }
+
     .stButton > button:focus {
         outline: none;
         box-shadow: 0 0 0 3px rgba(100, 204, 197, 0.4);
